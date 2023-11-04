@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #222;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    /* padding-top: 4%; */
+}
+
+.card-1 {
+    width: 300px;
+    height: 81.5%;
+    background-image: url("./images/defaultBackground.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+   
+}
+
+.items {
+    display: flex;
+    height: 100%;
+}
+
+.time-and-date {
+    align-self: flex-end;
+    color: rgba(255, 255, 255, 0.774);
+    background-color: rgba(0, 0, 0, 0.432);
+    width: 100%;
+    padding: 10px;
+}
+
+.time {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.date {
+    padding-left: 5px;
+}
+
+.card-2 {
+    height: 81.5%;
+    max-width: 470px;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    color: #fff;
+    /* border-radius: 20px; */
+    padding: 48px 15px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search input {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding: 10px 25px;
+    border: 1px solid rgb(12, 233, 148);
+    border-radius: 35px;
+    margin-right: 6px;
+    font-size: 18px;
+    transition: 0.5s;
+    width: 85%;
+}
+
+.search button {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.search button img {
+    width: 16px;
+    position: relative;
+    top: 3px;
+    transition: 0.4s;
+}
+
+.search button:hover img {
+    transform: scale(1.2);
+}
+
+.search button:active img {
+    transform: scale(1);
+}
+
+.weather-icon {
+    width: 170px;
+    margin-top: 15px;
+}
+
+.weather-label {
+    position: relative;
+    top: -17px;
+}
+
+.weather h1 {
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.weather h2 {
+    font-size: 38px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 80px;
+    padding: 0px 12px;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.col img {
+    width: 35px;
+    margin-right: 10px;
+}
+
+.humidity,
+.wind {
+    font-size: 21px;
+    margin-top: -6px;
+}
+
+/* for home page only */
+.home-page-container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-image: url('./images/defaultBackground.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.card {
+    height: 70%;
+    width: 45%;
+    background-color: rgba(0, 0, 0, 0.753);
+    text-align: center;
+    color: rgba(255, 255, 255, 0.863);
+    margin-top: 3%;
+    padding-top: 3%;
+    font-family: sans-serif;
+}
+.card img {
+    width: 270px;
+}
+.text-title > p:nth-child(1){
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.text-title > p:nth-child(2){
+    font-size: 13px;
+}
+
+.hide{
+    display: none !important;
+}
+/* ---------responsive design----------------- */
+@media screen and (max-width: 480px) {
+    .card-1{
+        width: 0;
+        height: 0;
+    }
+    .card-2{
+        height: 90%;
+        width: 100%;
+        padding-top: 45%;
+    }
+    .time-and-date{
+        position: absolute;
+        top: 45px;
+        left: 0;
+    }
+}
+@media screen and (max-width: 380px){
+    .card-2{
+        height: 100%;
+        width: 100%;
+    }
+    .time-and-date{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}

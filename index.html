@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather app using API</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container hide">
+        <div class="card-1">
+            <div class="items">
+                <div class="time-and-date">
+                    <div class="time">10:20:47</div>
+                    <div class="date">Tuesday, 25 july 2023</div>
+                </div>
+            </div>
+        </div>
+        <div class="card-2">
+            <div class="search">
+                <input type="text" placeholder="enter city name" spellcheck="false" id="inputCity">
+                <button id="btnSearch"><img src="./images/search.png"></button>
+            </div>
+            <div class="weather">
+                <img src="./images/clear.png" class="weather-icon">
+                <p class="weather-label"></p>
+                <h1 class="temp"></h1>
+                <h2 class="city"></h2>
+                <div class="details">
+                    <div class="col">
+                        <img src="./images/humidity.png" class="hidden">
+                        <div>
+                            <p class="humidity"></p>
+                            <p class="hidden">Humidity</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img src="./images/wind.png" class="hidden">
+                        <div>
+                            <p class="wind"></p>
+                            <p class="hidden">Wind Speed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------for home page only-------------- -->
+    <div class="home-page-container">
+        <div class="card">
+            <img src="./images/WeatherIcons.gif">
+            <div class="text-title">
+                <p>Detecting your location</p>
+                <p>Your current location will displayed on the App<br> & used for calculating realtime weather</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
