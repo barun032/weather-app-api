@@ -7,6 +7,8 @@ Allow users to check the weather status of different cities by searching their n
 
 #on Desktop view
 
+![weather -1](https://github.com/barun032/weather-app-api/assets/107342609/e608048e-3c4e-4470-8f11-ebbe39696722)
+
 
 #on Mobile view
 
