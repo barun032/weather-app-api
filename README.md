@@ -3,7 +3,7 @@ A live weather web app using an open weather API.
 
 Implement geolocation features to retrieve the client's current location.
 
-Allow users to check the weather status of different cities by searching their names.	
+Allow users to check the weather status of various cities by searching for their names.	
 
 #on Desktop view
 
